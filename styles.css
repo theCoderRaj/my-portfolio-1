@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 2rem;
+}
+a:link, a:visited{
+    color: lightcoral;
+}
+a:hover{
+    color: rgb(199, 98, 98);
+}
+.container{
+    height: 100vh;
+    width: 100%;
+}
+.navbar{
+    background-color: lightcoral;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo h2{
+    font-weight: 800;
+    font-size: 2.5rem;
+    
+    padding: 0 2rem;
+}
+.list-items{
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+    width: 60rem;
+    font-size: 1.5rem;
+}
+.list-items li{
+    list-style: none;
+}
+
+.list-items li a{
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+.list-items li a:hover{
+    color: rgb(243, 209, 209);
+}
+.burger-menu{
+   display: none;
+ 
+    
+}
+.burger{
+   position: absolute;
+   right: 18%;
+   font-size: 2.5rem;
+   cursor: pointer;
+   top: 3.6rem;
+   display: none;
+}
+
+
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-image img{
+    width: 42rem;
+    height: 40rem;
+    margin-top: 16rem;
+    margin-left: 30rem;
+    
+}
+.title-text h2{
+    color: lightcoral;
+    margin-right: 40rem;
+    font-size: 8rem;
+    margin-top: 12rem;
+}
+.color-title-text{
+    color: rgb(221, 164, 164);
+}
+.sub-title{
+    color: rgb(221, 164, 164);
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 1.6rem;
+}
+
+.icons{
+    color: lightcoral;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+    width: 50%;
+    margin: 15rem auto;
+}
+.socialmedia{
+    height: 15rem;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+}
+.icons i{
+    cursor: pointer;
+    transition: all 0.2s ease;
+   
+}
+
+@media screen and (max-width:1024px){
+    .list-items{
+        width: 30rem;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .main-image img{
+        width: 32rem;
+        height: 30rem;
+        
+        margin: auto;
+        margin-top: 10rem;
+    }
+    .title-text h2{
+        color: lightcoral;
+        text-align: center;
+        font-size: 4rem;
+        
+        width: auto;
+        margin: auto;
+    }
+     .sub-title{
+        width: auto;
+        margin: auto;
+        text-align: center;
+        font-size: 2rem;
+        margin-left: 1rem;
+     } 
+}
+@media screen and (max-width:768px){
+    /* body{
+        overflow-x: hidden;
+    } */
+    /* .list{
+        position: absolute;
+        right: 0;
+        height: 90vh;
+        background-color: rgb(179, 142, 142);
+        top: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 50%;
+        transform: translateX(100%);
+        transition: all 0.5s ease;
+
+    
+    }
+    .list-items-active{
+        transform: translateX(0%);
+    }
+     */
+     .logo h2{
+         margin-left:8rem;
+     }
+     .list-items li{
+        opacity: 0;}
+    .burger-menu{
+        display: block;
+        
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        
+    }
+      
+    .main-image img{
+        width: 32rem;
+        height: 30rem;
+        
+        margin: auto;
+        margin-top: 10rem;
+    }
+    .title-text h2{
+        color: lightcoral;
+        text-align: center;
+        font-size: 4rem;
+        
+        width: auto;
+        margin: auto;
+    }
+     .sub-title{
+        width: auto;
+        margin: auto;
+        text-align: center;
+        font-size: 2rem;
+        margin-left: 1rem;
+     } 
+   
+}
